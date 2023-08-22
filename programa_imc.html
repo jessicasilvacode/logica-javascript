@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	
+	function pularLinha() {
+		document.write("<br>");
+	}
+
+	function naTela(frase) {
+		document.write(frase);
+		pularLinha();
+	}
+
+	function calculaIMC(peso, altura){
+		const IMC = Math.round(peso / (altura * altura));
+		if (IMC < 18.5) {
+			naTela(nome + ", o seu IMC é: " + IMC + ". De acordo com a OMS, o seu IMC está abaixo do normal.");
+		} else if (IMC < 25) {
+			naTela(nome + ", o seu IMC é: " + IMC + ". De acordo com a OMS, o seu IMC está normal.");
+		} else if (IMC < 30) {
+			naTela(nome + ", o seu IMC é: " + IMC + ". De acordo com a OMS, o seu IMC está acima do normal.");
+		} else {
+			naTela(nome + ", o seu IMC é: " + IMC + ". De acordo com a OMS, voce está com obesidade.");
+			}
+		return IMC;
+	}
+
+	let nome = prompt("Informe o seu nome: ")
+	let peso = prompt(nome + ", informe o seu peso: (em Kgs)")
+	let altura = prompt(nome + ", informe a sua altura: (em metros)")
+
+	calculaIMC(peso, altura);
+
+</script>

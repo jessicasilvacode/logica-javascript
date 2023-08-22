@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	
+	function pularLinha() {
+    	document.write("<br>");
+    	document.write("<br>");
+	}
+	
+	function print(frase) {
+    	document.write(frase);
+    	pularLinha();
+	}
+
+	let numeroPensado = Math.round(Math.random() * 10);
+	console.log(numeroPensado);
+
+	let chute = parseInt(prompt("Digite o número que voce acha que estou pensando... de 0 a 10."));
+
+	if (chute == numeroPensado) {
+		print("Acertou!!!");
+	} else {
+		print("Errooouu... O número pensado foi " + numeroPensado + ".");
+	}
+
+</script>

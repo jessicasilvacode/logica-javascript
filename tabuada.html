@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	
+	function pularLinha() {
+    	document.write("<br>");
+    	document.write("<br>");
+	}
+	
+	function print(frase) {
+    	document.write(frase);
+    	pularLinha();
+	}
+
+	let num = parseInt(prompt("Digite um número: "));
+
+	print("A tabuada de " + num + " é: ");
+
+//	let multiplicador = 0;
+
+//	while (multiplicador <=10) {
+//		print(num * multiplicador);
+//		multiplicador = multiplicador + 1;
+//	}
+
+	for(let multiplicador = 0; multiplicador <= 10; multiplicador++) {
+		print(num * multiplicador);
+	}
+
+
+	print("Fim!");
+
+</script>

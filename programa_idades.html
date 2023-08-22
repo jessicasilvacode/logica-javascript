@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+
+	function pularLinha() {
+		document.write("<br>");
+	}
+
+	function naTela(frase) {
+		document.write(frase);
+		pularLinha();
+	}
+
+	const dataAtual = new Date();
+	const anoAtual = dataAtual.getFullYear();
+	
+	naTela("A idade da pessoa 1 é: " + (anoAtual - 1993) + " anos");
+
+	naTela("A idade da pessoa 2 é: " + (anoAtual - 1998) + " anos");
+
+	naTela("A idade da pessoa 3 é: " + (anoAtual - 1999) + " anos");
+
+	naTela("A idade da pessoa 4 é: " + (anoAtual - 1989) + " anos");
+
+	naTela("A idade da pessoa 5 é: " + (anoAtual - 2003) + " anos" + "<br>");
+
+	const idadeP1 = (anoAtual - 1993);
+	const idadeP2 = (anoAtual - 1998);
+	const idadeP3 = (anoAtual - 1999);
+	const idadeP4 = (anoAtual - 1989);
+	const idadeP5 = (anoAtual - 2003);
+
+	let mediaIdade = (idadeP1 + idadeP2 + idadeP3 + idadeP4 + idadeP5)/5;
+
+	naTela("A média das idades é: " + Math.round(mediaIdade));
+
+</script>

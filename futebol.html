@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	
+	function pularLinha() {
+    	document.write("<br>");
+    	document.write("<br>");
+	}
+	
+	function print(frase) {
+    	document.write(frase);
+    	pularLinha();
+	}
+
+	function classifica(vitorias, empates) {
+		if (pontos < 15) {
+			print("Seu time acumulou " + pontos + " pontos e está abaixo da média do ano passado.");
+		}
+		else if (pontos == 15) {
+			print("Seu time acumulou " + pontos + " pontos e está com a mesma média do ano passado.");
+		}
+		else {
+			print("Seu time acumulou " + pontos + " pontos e está acima da média do ano passado.");
+		}
+		return pontos;
+	}
+
+	let vitorias = parseInt(prompt("Número de vitórias: "));
+	let empates = parseInt(prompt("Número de empates: "));
+
+	let pontos = (vitorias * 3) + empates;
+
+	classifica(vitorias, empates);
+
+</script>

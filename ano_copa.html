@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	
+	function pularLinha() {
+    	document.write("<br>");
+    	document.write("<br>");
+	}
+	
+	function print(frase) {
+    	document.write(frase);
+    	pularLinha();
+	}
+
+	let limite = parseInt(prompt("Digite um ano: "));
+
+	let anoCopa = 1930;
+
+	while(anoCopa <= limite) {
+		print("Teve <b>Copa do Mundo</b> em " + anoCopa + ".");
+
+		anoCopa = anoCopa + 4; 
+	}
+
+</script>
